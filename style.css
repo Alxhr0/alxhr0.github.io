@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "NerdFont";
+  src: url("fonts/JetBrainsMonoNerdFont-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NerdFont";
+  src: url("fonts/JetBrainsMonoNerdFont-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NerdFont";
+  src: url("fonts/JetBrainsMonoNerdFont-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NerdFont";
+  src: url("fonts/JetBrainsMonoNerdFont-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  font-family: 'NerdFont', monospace;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #161616;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content {
+  padding: 12px 18px;
+}
+
+.content-right {
+  padding: 12px 18px;
+}
+
+.content h1.title {
+  margin: 0 !important;
+}
+
+.content h1.text {
+  font-family: 'NerdFont', monospace;
+  font-weight: normal;
+  font-style: normal;
+  font-size: large;
+}
+
+.container {
+  padding: 0px 8px 0px 24px;
+  color: white;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items:center
+}
+
+.container,
+.container ul {
+  background-color: #121212;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: larger;
+}
+
+li {
+  display: inline;
+  text-decoration-line: underline;  
+  color: white;  
+}
+
+img {
+  padding-top: -1px;
+}
+
+.stats {
+  font-family: 'NerdFont', monospace;
+  font-weight: bold;
+  font-style: normal;
+  align-items: end;
+}
+
+a, a:visited {
+  color: #ffffff;
+}
+
+.centered {
+  margin-right: 15rem;
+}
+
+.centered div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-center;
+  align-items: center;
+}
+
+.centered div h1 {
+  font-family: "NerdFont";
+  src: url("fonts/JetBrainsMonoNerdFont-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-size: x-large;
+  text-align: center;
+  margin: 12px 7px 12px 0px;
+}
+
+.centered div img {
+  max-height: 38px;
+  max-width: 38px;
+  border-radius: 100%;
+}
+
+.banner {
+  margin-left: -18px;
+  margin-right: -18px;
+  margin-top: -8px; 
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}

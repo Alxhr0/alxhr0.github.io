@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alxhr0 - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/favicon.png">
+</head>
+<body>
+  <header class="container">
+    <ul>
+      <li><a href="https://alxhr0.github.io/website">Home</a></li>
+      <li><a href="about.asp">About</a></li>
+    </ul>
+    <div class="centered">
+      <div>
+        <h1 class="title">Welcome!</h1>
+        <img src="./images/pfp.png" />
+      </div>
+    </div>
+    <div>
+  </header>
+  <main class="content">
+    <h1 class="title">Hi, I'm Rafeal.</h1>
+    <h1 class="text" id="age-text" />
+    <script>
+      const ageText = document.querySelector("#age-text");
+    
+      const getAge = () => {
+        const year = new Date().getYear() + 1900
+        return year - 2007
+      }
+    
+      ageText.innerHTML = `A ${getAge()} year old non-developer.`
+    </script>
+    <br>
+    <br>
+    <h1 class="text">People call me Alxhr0 online, I'm a passionate software and web "developer". <br>I code stuff as a hobby, I enjoy it a lot.</h1>
+    <br>
+    <h1 class="stats">My GitHub stats</h1>
+    <img alt="My Stats" src="https://github-readme-stats.vercel.app/api?username=Alxhr0&show_icons=true&theme=vision-friendly-dark">
+    <h1 align="center" class="title">Software, I use.</h1>
+  </main>
+</body>
+</html>
