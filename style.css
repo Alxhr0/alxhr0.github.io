@@ -133,3 +133,24 @@ a, a:visited {
   padding-bottom: 20px;
   text-align: center;
 }
+
+.about-content {
+  font-size: small;
+  color:white;
+  font-family: 'NerdFont', monospace;
+  font-weight: normal;
+  font-style: normal;
+  padding: 0px 18px;
+  text-align: left;
+}
+
+.about-content div img {
+  float: right;
+}
+
+.image-about {
+  height: 30px;
+  width: 30px;
+  margin-right: 80%;
+  float: right;
+}
