@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alxhr0 - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./images/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alxhr0 - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./images/favicon.png">
 </head>
+
 <body>
   <header class="container">
     <ul>
@@ -26,32 +28,50 @@
     <h1 class="text" id="age-text" />
     <script>
       const ageText = document.querySelector("#age-text");
-    
+
       const getAge = () => {
         const year = new Date().getYear() + 1900
         return year - 2007
       }
-    
+
       ageText.innerHTML = `A ${getAge()} year old non-developer.`
     </script>
     <br>
     <br>
-    <h1 class="text">People call me Alxhr0 online, I'm a passionate software and web "developer". <br>I code stuff as a hobby, I enjoy it a lot.</h1>
+    <h1 class="text">People call me Alxhr0 online, I'm a passionate software and web "developer". <br>I code stuff as a
+      hobby, I enjoy it a lot.</h1>
     <br>
     <h1 class="stats">My GitHub stats</h1>
-    <img alt="My Stats" src="https://github-readme-stats.vercel.app/api?username=Alxhr0&show_icons=true&theme=vision-friendly-dark">
+    <img alt="My Stats"
+      src="https://github-readme-stats.vercel.app/api?username=Alxhr0&show_icons=true&theme=vision-friendly-dark">
   </main>
   <main class="about-content">
-    <h1 class="title">Software, I use.</h1>
+    <h1 class="title">Software and hardware, I use.</h1>
     <div style="display: flex; justify-content: left; align-items: left, row;">
       <h2>OS: Gentoo</h2>
-      <img width="32" height="32" src="./images/Gentoo.png" style="padding-left: 7px; padding-top: 14px;"/>
+      <img width="32" height="32" src="./images/Gentoo.png" style="padding-left: 7px; padding-top: 14px;" />
     </div>
     <h2>Laptop: Acer Nitro AN515-44 💻</h2>
     <div style="display: flex; justify-content: left; align-items: left, row;">
       <h2>IDE: VSCode/Helix</h2>
-      <img width="32" height="32" src="./images/Gentoo.png" style="padding-left: 7px; padding-top: 14px;"/>
+      <img width="32" height="32" src="./images/VSCode.png" style="padding-left: 7px; padding-top: 14px;" />
     </div>
+    <br>
+    <h1 class="title">Languages, I know.</h1>
+    <div style="display: flex; justify-content: left; align-items: left, row;">
+      <h2>HTML</h2>
+      <img width="32" height="32" src="./images/HTML.png" style="padding-left: 7px; padding-top: 14px;" />
+    </div>
+    <div style="display: flex; justify-content: left; align-items: left, row;">
+      <h2>C++ (not fully yet)</h2>
+      <img width="32" height="32" src="./images/cpp.png" style="padding-left: 7px; padding-top: 14px;" />
+    </div>
+    <div style="display: flex; justify-content: left; align-items: left, row;">
+      <h2>Nix</h2>
+      <img width="32" height="32" src="./images/Nix.svg" style="padding-left: 7px; padding-top: 14px;" />
+    </div>
+
   </main>
 </body>
+
 </html>
