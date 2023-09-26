@@ -154,3 +154,8 @@ a, a:visited {
   margin-right: 80%;
   float: right;
 }
+
+#Stats {
+  text-align: right;
+  box-align: right;
+}
