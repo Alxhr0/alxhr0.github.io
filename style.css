@@ -30,8 +30,8 @@ body {
   font-family: 'NerdFont', monospace;
   font-weight: bold;
   font-style: normal;
-  background-color: #161616;
-  color: white;
+  background-color: #101419;
+  color: #b6beca;
   margin: 0px;
   padding: 0px;
   text-align: center;
@@ -68,7 +68,7 @@ body {
 
 .container,
 .container ul {
-  background-color: #121212;
+  background-color: #0a0c0f;
 }
 
 ul {
@@ -86,6 +86,13 @@ li {
 
 img {
   padding-top: -1px;
+}
+
+.imagesinfo {
+  padding-left: 7px;
+  padding-top: 14px;
+  height: 32px;
+  width: 32px;
 }
 
 .stats {
@@ -138,7 +145,7 @@ a, a:visited {
 
 .about-content {
   font-size: small;
-  color:white;
+  color: #b6beca;
   font-family: 'NerdFont', monospace;
   font-weight: normal;
   font-style: normal;
