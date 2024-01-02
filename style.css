@@ -106,27 +106,25 @@ a, a:visited {
   color: #ffffff;
 }
 
-.centered {
+.left {
   margin-right: 15rem;
 }
 
-.centered div {
+.left div {
   display: flex;
   flex-direction: row;
-  justify-content: flex-center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: left;
 }
 
-.centered div h1 {
+.left div h1 {
   font-family: "NerdFont";
   src: url("fonts/JetBrainsMonoNerdFont-Bold.ttf") format("truetype");
   font-weight: bold;
   font-size: x-large;
-  text-align: center;
-  margin: 12px 7px 12px 0px;
 }
 
-.centered div img {
+.left div img {
   max-height: 38px;
   max-width: 38px;
   border-radius: 100%;
