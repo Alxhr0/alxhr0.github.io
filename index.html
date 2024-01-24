@@ -18,6 +18,8 @@
     </ul>
     <div class="centered">
         <div>
+            <h1 id="clock"></h1>
+            <br>
             <h1 class="title">Welcome!</h1>
             <img src="./images/pfp.png"/>
         </div>
@@ -26,14 +28,33 @@
 <main class="content">
     <h1 class="title">Hi, I'm Rafeal.</h1>
     <script>
-        const ageText = document.querySelector("#age-text");
+        const clock = document.querySelector("#clock");
 
-        const getAge = () => {
-            const year = new Date().getYear() + 1900
-            return year - 2007
-        }
+        const getTime = () => {
+            let {hour, minutes} = {
+                hour: new Date().getHours(),
+                minutes: new Date().getMinutes(),
+            };
 
-        ageText.innerHTML = `A ${getAge()} year old non-developer.`
+            if (minutes < 10) {
+                minutes = `0${minutes}`;
+            }
+
+            return `${hour}:${minutes}`
+        };
+
+        const update = () => {
+            clock.innerText = getTime();
+        };
+
+        const initialHook = () => {
+            update();
+            setInterval(update, 1000);
+        };
+
+        document.addEventListener("DOMContentLoaded", () => {
+            initialHook();
+        });
     </script>
     <br>
     <br>
@@ -41,46 +62,14 @@
         stuff as a
         hobby, I enjoy it a lot.</h1>
     <br>
-    <h1 class="stats">My GitHub stats</h1>
-    <img alt="My Stats" class="Stats"
-         src="https://github-readme-stats.vercel.app/api?username=Alxhr0&show_icons=true&theme=vision-friendly-dark">
 </main>
-<main class="about-content">
+<main class="content">
 
     <h1 class="title">My recent Projects.</h1>
-    <div style="display: flex; justify-content: center; align-items: center, row;">
-        <a href="https://gitlab.com/alxhr0/nexusfetch"><h2>Nexusfetch - A fetch utility written in Rust.</h2></a>
-    </div>
-
-
-    <h1 class="title">Software and hardware, I use.</h1>
-    <div style="display: flex; justify-content: center; align-items: center, row;">
-        <h2>OS: NixOS</h2>
-        <img class="imagesinfo" src="./images/Nix.svg" alt="openSUSE icon"/>
-    </div>
-    <h2>Laptop: Acer Nitro AN515-44 💻</h2>
-    <div style="display: flex; justify-content: center; align-items: center, row;">
-        <h2>IDE: Doom Emacs</h2>
-        <img class="imagesinfo" src="./images/Emacs.png" alt="Emacs icon"/>
+    <div>
+        <a href="https://gitlab.com/alxhr0/nexusfetch"><h1 class="text">Nexusfetch - A fetch utility written in Rust.</h1></a>
     </div>
     <br>
-    <h1 class="title">Languages, I quite know, but still learing.</h1>
-    <div style="display: flex; justify-content: center; align-items: center, row;">
-        <h2>HTML</h2>
-        <img class="imagesinfo" src="./images/HTML.png" alt="HTML icon"/>
-    </div>
-    <div style="display: flex; justify-content: center; align-items: center, row;">
-        <h2>C++ (not fully yet)</h2>
-        <img class="imagesinfo" src="./images/cpp.png" alt="C++ icon"/>
-    </div>
-    <div style="display: flex; justify-content: center; align-items: center, row;">
-        <h2>Nix</h2>
-        <img class="imagesinfo" src="./images/Nix.svg" alt="Nix icon"/>
-    </div>
-    <div style="display: flex; justify-content: center; align-items: center, row;">
-        <h2>Rust (still learning)</h2>
-        <img class="imagesinfo" src="./images/Rust.png" alt="Rust icon"/>
-    </div>
 
     <h1 class="title">About the website.</h1>
 
